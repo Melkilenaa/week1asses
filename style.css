@@ -42,13 +42,13 @@ align-items: flex-start;
     gap: 20px;
     column-width: 1px;
     margin-top: 20px;
+    grid-template-areas: 
+          'i i n'
+          'c c n';
 }
 .image{
     display: grid;
-    grid-area: image;
-    grid: 1;
-    grid-column: 1 ;
-    grid-row:1;
+    grid-area: i;
     margin-right: 10px;
 }
 .image img{
@@ -60,18 +60,12 @@ align-items: flex-start;
 .area2{
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    grid-area: content;
-    grid: 3;
-    grid-row: 2;
-    grid-column: 1;
-    margin-top: -250px;
+    grid-area: c;
+    margin-top: 0;
 }
 .content{
     display: grid;
-    grid-area: news;
-    grid:2;
-    grid-row: 1;
-    grid-column: 2;
+    grid-area: n;
     padding: 50px;
 }
 .content{
